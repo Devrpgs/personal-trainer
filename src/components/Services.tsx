@@ -61,12 +61,7 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="service-card border-t-4 border-t-primary group hover:-translate-y-2 transition-all duration-300 overflow-hidden"
-                style={{ 
-                  backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.99)), url(${service.bgImage})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center'
-                }}
+                className="service-card border-t-4 border-t-primary group hover:-translate-y-2 transition-all duration-300 overflow-hidden bg-white"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <CardHeader className="pb-2 relative z-10">
