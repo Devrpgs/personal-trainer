@@ -12,21 +12,21 @@ const Testimonials = () => {
       name: "Ana Silva",
       age: 34,
       testimonial: "Treinar com o Robson mudou completamente minha vida. Perdi 15kg em 6 meses e ganhei uma confiança que nunca imaginei ter. A abordagem personalizada e o acompanhamento constante fizeram toda a diferença.",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop",
       result: "Perda de 15kg em 6 meses"
     },
     {
       name: "Carlos Mendes",
       age: 42,
       testimonial: "Após uma lesão nas costas, pensei que nunca mais conseguiria treinar normalmente. O programa de reabilitação do Robson não só me recuperou como me deixou mais forte do que antes.",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop",
       result: "Recuperação completa de lesão e ganho de força"
     },
     {
       name: "Patrícia Alves",
       age: 28,
       testimonial: "Como atleta amadora, busquei o Robson para melhorar meu desempenho nas corridas. Em 3 meses, bati meu recorde pessoal na meia maratona e melhorei significativamente minha resistência.",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop",
       result: "Melhora de 12% no tempo de meia maratona"
     }
   ];
@@ -40,14 +40,14 @@ const Testimonials = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="relative">
+          <div className="relative flex justify-center items-center">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-primary/10 rounded-full"></div>
             <img
               src={testimonials[activeTestimonial].image}
               alt={testimonials[activeTestimonial].name}
-              className="relative z-10 rounded-lg shadow-xl max-w-md mx-auto"
+              className="relative z-10 rounded-lg shadow-xl max-w-md mx-auto object-cover h-96 w-full"
             />
-            <div className="bg-secondary text-white py-3 px-6 rounded-full inline-block mt-6 relative z-10 mx-auto block">
+            <div className="bg-secondary text-white py-3 px-6 rounded-full inline-block mt-6 absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
               {testimonials[activeTestimonial].result}
             </div>
           </div>
