@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { mail, phone, calendar } from 'lucide-react';
+import { Mail, Phone, Calendar } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 const ContactForm = () => {
@@ -84,7 +84,7 @@ const ContactForm = () => {
 
             <div className="space-y-6">
               <div className="flex items-center">
-                <phone className="h-6 w-6 text-primary mr-3" />
+                <Phone className="h-6 w-6 text-primary mr-3" />
                 <div>
                   <h4 className="font-semibold">Telefone</h4>
                   <p>(11) 98765-4321</p>
@@ -92,7 +92,7 @@ const ContactForm = () => {
               </div>
 
               <div className="flex items-center">
-                <mail className="h-6 w-6 text-primary mr-3" />
+                <Mail className="h-6 w-6 text-primary mr-3" />
                 <div>
                   <h4 className="font-semibold">Email</h4>
                   <p>contato@robsonporto.com.br</p>
@@ -100,7 +100,7 @@ const ContactForm = () => {
               </div>
 
               <div className="flex items-center">
-                <calendar className="h-6 w-6 text-primary mr-3" />
+                <Calendar className="h-6 w-6 text-primary mr-3" />
                 <div>
                   <h4 className="font-semibold">Horários</h4>
                   <p>Segunda a Sexta: 6h - 22h</p>

@@ -1,38 +1,38 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { dumbbell, users, calendar, utensils, chat } from 'lucide-react';
+import { Dumbbell, Users, Calendar, Utensils, MessageSquare } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       title: "Treinamento Personalizado",
       description: "Sessões individuais adaptadas aos seus objetivos específicos, nível de condicionamento e necessidades.",
-      icon: dumbbell,
+      icon: Dumbbell,
       price: "A partir de R$120/sessão"
     },
     {
       title: "Consultoria Online",
       description: "Acompanhamento à distância com programas de treinamento personalizados e suporte via chat.",
-      icon: chat,
+      icon: MessageSquare,
       price: "A partir de R$350/mês"
     },
     {
       title: "Treinamento em Grupo",
       description: "Sessões para pequenos grupos (2-4 pessoas) com benefícios de custo reduzido e motivação em equipe.",
-      icon: users,
+      icon: Users,
       price: "A partir de R$80/pessoa"
     },
     {
       title: "Planos Personalizados",
       description: "Programas detalhados para treinar por conta própria com atualizações periódicas.",
-      icon: calendar,
+      icon: Calendar,
       price: "A partir de R$250/mês"
     },
     {
       title: "Acompanhamento Nutricional",
       description: "Orientação nutricional personalizada para complementar seu programa de treinamento.",
-      icon: utensils,
+      icon: Utensils,
       price: "A partir de R$200/consulta"
     }
   ];
