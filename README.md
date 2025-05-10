@@ -4,9 +4,7 @@
 <p align="center">
   <!-- Exemplo de Badges - Substitua pelos seus -->
   <a href="URL_DO_SEU_BUILD_STATUS"><img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status"></a>
-  <a href="URL_DA_SUA_COBERTURA_DE_TESTES"><img src="https://img.shields.io/badge/coverage-100%25-brightgreen" alt="Code Coverage"></a>
   <a href="URL_DA_SUA_LICENCA"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
-  <a href="URL_DO_SEU_NPM_PACKAGE"><img src="https://img.shields.io/npm/v/seu-pacote" alt="NPM Version"></a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
 </p>
 
@@ -152,8 +150,8 @@ Você pode escolher outra licença que se adeque melhor ao seu projeto. Visite h
 
 ## 📞 Contato
 
-Seu Nome/Nome da Organização - [@seuTwitter](https://twitter.com/seuTwitter) - email@example.com
+DevPorto - https://devporto.dev - contato@devporto.dev
 
-Link do Projeto: [https://github.com/seuUsuario/seuRepositorio](https://github.com/seuUsuario/seuRepositorio) <!-- Substitua pelo link real do seu repositório -->
+Link do Projeto: [https://github.com/seuUsuario/seuRepositorio]([https://github.com/seuUsuario/seuRepositorio](https://github.com/Devrpgs/personal-trainer.git)) <!-- Substitua pelo link real do seu repositório -->
 
 ---
