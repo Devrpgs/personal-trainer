@@ -1,17 +1,7 @@
-
 import { Badge } from '@/components/ui/badge';
-
 const About = () => {
-  const certifications = [
-    "CREF 123456-G/SP",
-    "Especialização em Hipertrofia",
-    "Treinamento Funcional",
-    "Nutrição Esportiva",
-    "Reabilitação Física"
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-white relative overflow-hidden">
+  const certifications = ["CREF 123456-G/SP", "Especialização em Hipertrofia", "Treinamento Funcional", "Nutrição Esportiva", "Reabilitação Física"];
+  return <section id="about" className="py-20 bg-white relative overflow-hidden">
       {/* Background design elements */}
       <div className="absolute top-20 right-0 w-72 h-72 rounded-full bg-primary/5 animate-pulse"></div>
       <div className="absolute -bottom-20 -left-20 w-96 h-96 rounded-full bg-secondary/5"></div>
@@ -41,14 +31,9 @@ const About = () => {
             <div className="mb-8">
               <h4 className="text-xl font-semibold mb-4 text-primary/90">Certificações e Especializações</h4>
               <div className="flex flex-wrap gap-3">
-                {certifications.map((cert, index) => (
-                  <Badge 
-                    key={index} 
-                    className="bg-primary/10 text-primary hover:bg-primary/20 py-2 px-4 text-sm transition-all duration-200 hover:scale-105"
-                  >
+                {certifications.map((cert, index) => <Badge key={index} className="bg-primary/10 text-primary hover:bg-primary/20 py-2 px-4 text-sm transition-all duration-200 hover:scale-105">
                     {cert}
-                  </Badge>
-                ))}
+                  </Badge>)}
               </div>
             </div>
           </div>
@@ -58,21 +43,15 @@ const About = () => {
               <div className="absolute -top-4 -right-4 w-full h-full rounded-2xl bg-primary/10 transform rotate-3"></div>
               <div className="absolute -bottom-4 -left-4 w-full h-full rounded-2xl bg-secondary/10 transform -rotate-3"></div>
               <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02]">
-                <img 
-                  src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=1172&auto=format&fit=crop" 
-                  alt="Robson Porto Personal Trainer" 
-                  className="w-full h-auto"
-                />
+                <img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=1172&auto=format&fit=crop" alt="Robson Porto Personal Trainer" className="w-full h-auto" />
               </div>
-              <div className="absolute -bottom-6 right-10 bg-white p-3 rounded-lg shadow-lg">
+              <div className="absolute -bottom-6 right-10 bg-white p-3 rounded-lg shadow-lg my-0 py-0">
                 <p className="text-primary font-bold">+10 anos de experiência</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
