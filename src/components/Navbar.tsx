@@ -31,13 +31,16 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+        isScrolled 
+          ? 'bg-white/90 backdrop-blur-md shadow-md py-2' 
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#home" className="text-2xl font-bold font-montserrat text-primary">
-          Robson Porto
+        <a href="#home" className="text-2xl font-bold font-montserrat text-primary relative">
+          <span className="inline-block transition-transform hover:scale-105 duration-300">Robson Porto</span>
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
         </a>
         
         {/* Desktop Navigation */}
@@ -47,7 +50,7 @@ const Navbar = () => {
               <li key={link.name}>
                 <a 
                   href={link.href} 
-                  className={`font-medium hover:text-secondary transition-colors ${
+                  className={`font-medium hover:text-secondary transition-colors duration-300 fancy-underline ${
                     isScrolled ? 'text-gray-800' : 'text-white'
                   }`}
                 >
@@ -56,7 +59,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Button className="btn-primary">
+          <Button className="btn-primary hover:scale-105 transition-transform duration-300">
             Agende Agora
           </Button>
         </div>
@@ -75,20 +78,20 @@ const Navbar = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-md py-4 lg:hidden animate-fade-in">
+          <div className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-md py-4 lg:hidden animate-fade-in">
             <ul className="flex flex-col space-y-3 px-6">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href} 
-                    className="block font-medium text-gray-800 hover:text-secondary transition-colors"
+                    className="block font-medium text-gray-800 hover:text-secondary transition-colors py-2"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
                   </a>
                 </li>
               ))}
-              <li className="pt-2">
+              <li className="pt-4">
                 <Button className="btn-primary w-full">
                   Agende Agora
                 </Button>
