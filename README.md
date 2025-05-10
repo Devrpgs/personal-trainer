@@ -152,6 +152,6 @@ Você pode escolher outra licença que se adeque melhor ao seu projeto. Visite h
 
 DevPorto - https://devporto.dev - contato@devporto.dev
 
-Link do Projeto: [https://github.com/seuUsuario/seuRepositorio]([https://github.com/seuUsuario/seuRepositorio](https://github.com/Devrpgs/personal-trainer.git)) <!-- Substitua pelo link real do seu repositório -->
+Link do Projeto: https://github.com/Devrpgs/personal-trainer.git <!-- Substitua pelo link real do seu repositório -->
 
 ---
